@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html id="html">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta content="no" name="apple-mobile-web-app-capable">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="js/rem.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+	
+		 <script src="js/main.js?t=4"></script>
+    	
+		<title>切西瓜</title>
+	</head>
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+		
+		
+		#forhorview {
+			position: absolute;
+			font-size: 0.4rem;
+			text-align: center;
+			line-height: 100%;
+			color: #6c6f3a;
+			background: #fff;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			display: flex;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+		}
+		.gameNum{
+			position: absolute;
+			top: 1.45rem;
+    		left: 1.2rem;
+			font-size: .3rem;
+			color: #fff;
+		}
+		@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+			.gameNum {
+				top: 1.7rem !important;
+			}
+		}
+	</style>
+
+	<body>
+		<div id="app">
+			<div class="game"></div>
+			<div id="forhorview">正在加载</div>
+			<div class="gameNum">1</div>
+	
+		</div>
+	</body>
+</html>
